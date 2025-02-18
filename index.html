@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Contents</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+
+        .header {
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-top: 20px;
+            font-size: 26px;
+            border-bottom: 3px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        li {
+            margin: 15px 0;
+            opacity: 0;
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        li:nth-child(1) { animation-delay: 0.1s; }
+        li:nth-child(2) { animation-delay: 0.2s; }
+        li:nth-child(3) { animation-delay: 0.3s; }
+        li:nth-child(4) { animation-delay: 0.4s; }
+        li:nth-child(5) { animation-delay: 0.5s; }
+        li:nth-child(6) { animation-delay: 0.6s; }
+        li:nth-child(7) { animation-delay: 0.7s; }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background: #007bff;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+        }
+
+        .card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Gaurav Gupta - Reg No: 22BCE10323
+        </div>
+
+        <div class="card">
+            <h2>HTML</h2>
+            <ul>
+                <li><a href="/html/task1.html">HTML 1</a></li>
+                <li><a href="/html/task2.html">HTML 2</a></li>
+                <li><a href="/html/task3.html">HTML 3</a></li>
+                <li><a href="/html/task4.html">HTML 4</a></li>
+                <li><a href="/html/task5.html">HTML 5</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>CSS</h2>
+            <ul>
+                <li><a href="/css/task1.html">CSS 1</a></li>
+                <li><a href="/css/task2.html">CSS 2</a></li>
+                <li><a href="/css/task3.html">CSS 3</a></li>
+                <li><a href="/css/task4.html">CSS 4</a></li>
+                <li><a href="/css/task5.html">CSS 5</a></li>
+                <li><a href="/css/task6.html">CSS 6</a></li>
+                <li><a href="/css/task7.html">CSS 7</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Bootstrap (BS)</h2>
+            <ul>
+                <li><a href="/bs/task1.html">BS 1</a></li>
+                <li><a href="/bs/task2/task2.html">BS 2</a></li>
+                <li><a href="/bs/task3.html">BS 3</a></li>
+                <li><a href="/bs/task4.html">BS 4</a></li>
+                <li><a href="/bs/task5.html">BS 5</a></li>
+                <li><a href="/bs/task6.html">BS 6</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

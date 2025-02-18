@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #922C46;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #71213B;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            color: white;
+        }
+        .container input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .container input[type="radio"] {
+            width: auto;
+        }
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form>
+        <label>Name:</label>
+        <input type="text" placeholder="your name" required>
+
+        <label>Email:</label>
+        <input type="email" placeholder="your email" required>
+
+        <label>Password:</label>
+        <input type="password" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" required>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+        <br>
+        <br>
+
+        <label>Language:</label>
+        <select>
+            <option>Select language</option>
+            <option>English</option>
+            <option>Spanish</option>
+            <option>French</option>
+        </select>
+
+        <label>Zip Code:</label>
+        <input type="text" required>
+
+        <label>About:</label>
+        <textarea placeholder="Write about yourself..."></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
